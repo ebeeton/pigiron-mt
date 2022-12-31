@@ -1,6 +1,6 @@
 # pigiron-mt
 
-![In-game screenshot](https://github.com/ebeeton/pigiron-mt/assets/images/screenshot.png)
+![In-game screenshot](/assets/images/screenshot.png)
 
 A game demo I abandoned in January 2006. I intended this to be an isometric game
 where you drive around in a little tank and blow things up. Miraculously, it
