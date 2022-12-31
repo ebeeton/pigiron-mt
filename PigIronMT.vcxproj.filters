@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{6b2ba433-bbd5-44ae-bdae-fbd14532c047}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_Camera.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_DLight.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_Geom.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_GUI.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_Logger.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_Math.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_Particle.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_Render.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_Utils.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PI_WorldTree.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterEntityList.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_Camera.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_DLight.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_Geom.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_GUI.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_Logger.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_Math.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_Particle.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_Render.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_Utils.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PI_WorldTree.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

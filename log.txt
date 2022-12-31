@@ -1,18 +1,18 @@
-log.txt opened Tuesday 1/31/2006	17:03:11
+log.txt opened Saturday 12/31/2022	13:50:35
 --------------------------------------------------------------------------------
 
 Render thread spawned successfully.
 Game::Init() successful!
 OpenGL connection info:
-	GL_VENDOR	ATI Technologies Inc.
-	GL_RENDERER	MOBILITY RADEON X300 x86/SSE2
-	GL_VERSION	1.5.4650 WinXP Release
+	GL_VENDOR	NVIDIA Corporation
+	GL_RENDERER	NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2
+	GL_VERSION	4.6.0 NVIDIA 527.56
 	GLU_VERSION	1.2.2.0 Microsoft Corporation
-			8 texture units
+			4 texture units
 
 PI_Render::Init() successful.
 PI_GUI::Init() successful.
-PI_Render::LoadWorldPIM() elapsed 1.188 sec.
+PI_Render::LoadWorldPIM() elapsed 0.797 sec.
 World tree contains 38164 triangles split into 2047 leaf nodes (4093 total nodes).
 
 
@@ -20,4 +20,4 @@ Game::Shutdown() called.
 Render thread exited successfully.
 
 --------------------------------------------------------------------------------
-log.txt closed Tuesday 1/31/2006	17:03:32
+log.txt closed Saturday 12/31/2022	13:51:25
