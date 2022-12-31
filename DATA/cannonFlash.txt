@@ -1,0 +1,33 @@
+Emitter position X Y Z
+0 0 0
+
+Emitter position variation %
+0
+
+Emitter direction normal X Y Z
+0 0 0
+
+Emitter direction variation %
+0
+
+Emitter force
+0 0 0
+
+Max life & Variation %
+0.5	20
+
+Size & Variation %
+0.5	50
+
+Speed & Variation %
+2	100
+
+Number of color keyframes
+5
+
+R	G	B	A	Particle life
+1	1	1	1	0.5
+1	0.75	0	1	0.45
+1	0.25	0	1	0.4
+0.25	0.25	0.25	0.75	0.25
+0.25	0.25	0.25	0	0
