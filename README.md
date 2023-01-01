@@ -1,10 +1,11 @@
 # pigiron-mt
 
+[![MSBuild](https://github.com/ebeeton/pigiron-mt/actions/workflows/msbuild.yml/badge.svg)](https://github.com/ebeeton/pigiron-mt/actions/workflows/msbuild.yml)
+
 ![In-game screenshot](/assets/images/screenshot.png)
 
-A game demo I abandoned in January 2006. I intended this to be an isometric game
-where you drive around in a little tank and blow things up. Miraculously, it
-still builds and runs in Visual Studio 2022.
+A Win32 game demo that I stopped working on in January 2006. I intended this to
+be an isometric game where you drive around in a little tank and blow things up. 
 
 # Controls
 
