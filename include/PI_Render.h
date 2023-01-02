@@ -267,7 +267,7 @@ private:
 	PI_Render &operator=(const PI_Render &rhs);
 	PI_Render(void) : m_HDC(0), m_HWND(0), m_HGLRC(0), m_width(0), m_height(0), pActiveCam(0), pActiveDLight(0), gui(PI_GUI::GetInstance()),
 						activeTexStage0(0), activeTexStage1(0), pWorld(new PI_WorldTree),
-						numTrisRendered(0), numNodesRendered(0), state(StartupState), vpAssetList(0) /*vpRenderList(0)*/
+						numTrisRendered(0), numNodesRendered(0), state(StartupState), vpAssetList(0), vpRenderList(0)
 	{ }
 
 	// Descriptor for memory-resident textures.

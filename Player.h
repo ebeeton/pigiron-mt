@@ -24,11 +24,11 @@ class Player : public Entity
 	const PI_MeshNode *pCannonNode, *pTurretNode, *pHullNode;
 
 	// These nodes are for "attaching" particle systems.
-	const PI_MeshNode *pCannonFlashNode, *pGunFlashNode;
+	const PI_MeshNode *pCannonFlashNode = NULL, *pGunFlashNode = NULL;
 
 	// How much is the turret rotated (radians)?
 	float turretRot, // A little grease'll clear that right up...
-		  speed;
+		  speed = 0;
 
 	unsigned char flags;
 	enum { LEFT_TREAD_FWD = 0x01, RIGHT_TREAD_FWD = 0x02, LEFT_TREAD_REV = 0x04, RIGHT_TREAD_REV = 0x08,

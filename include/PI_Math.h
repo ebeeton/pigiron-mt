@@ -189,7 +189,7 @@ class PI_Mat44
 
 public:
 	// The column-major components.
-	float mat[16];
+	float mat[16] = { 0, };
 
 	PI_Mat44(bool initIdentity = true)
 	{

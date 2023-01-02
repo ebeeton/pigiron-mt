@@ -17,7 +17,7 @@ using std::ostringstream;
 class PI_GUIObject
 {
 	friend class PI_GUI;
-	float rgba[4];
+	float rgba[4] = { 0, };
 	PI_Vec2 pos;
 	unsigned int texName;
 	float halfWidth, halfHeight;
