@@ -1146,9 +1146,9 @@ void PI_Render::RenderWorldTreeR(const PI_WorldTree::PI_WorldTreeNode *n) const
 		for (unsigned char i = 0; i < 6; ++i)
 		{
 			// Compute the effective radius of the bounding box relative to each frustum plane.
-			rEff = sqrt(pow(R.Dot(pActiveCam->frustumPlanes[i].normal), 2) +
-					pow(S.Dot(pActiveCam->frustumPlanes[i].normal), 2) +
-					pow(T.Dot(pActiveCam->frustumPlanes[i].normal), 2));
+			rEff = sqrt(pow(R.Dot(pActiveCam->frustumPlanes[i].normal), 2.0f) +
+					pow(S.Dot(pActiveCam->frustumPlanes[i].normal), 2.0f) +
+					pow(T.Dot(pActiveCam->frustumPlanes[i].normal), 2.0f));
 
 			if (pActiveCam->frustumPlanes[i].DotHomogenous(n->center) <= -rEff)
 				// The box is not visible, so bug out.
