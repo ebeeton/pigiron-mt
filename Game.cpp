@@ -59,7 +59,7 @@ unsigned int __stdcall spawnRenderThread(void *v)
 // Initialize the game.
 bool Game::Init(void)
 {
-	srand(GetTickCount());
+	srand((unsigned int)GetTickCount64());
 	ShowCursor(FALSE);
 
 	// Initialize all subsystems.
@@ -81,7 +81,7 @@ bool Game::LoadLevel(void)
 	// Load the level script.
 	const int MaxLen = 1000;
 	char levelScriptName[MaxLen];
-	sprintf(levelScriptName, "DATA\\level%d.PLS", curLevel);
+	sprintf_s(levelScriptName, MaxLen, "DATA\\level%d.PLS", curLevel);
 	ifstream fin(levelScriptName, /*ios_base::binary |*/ ios_base::in);
 	if (!fin.is_open())
 		return false;
