@@ -102,8 +102,10 @@ bool PI_Render::Init(void)
 	}
 	
 	// Initialize OpenGL states.
-	if (!InitOpenGL())
+	if (!InitOpenGL()) {
+		LeaveCriticalSection(&g_cs);
 		return false;
+	}
 	LogGLConnection();
 
 	// Ready to rock!
@@ -437,8 +439,10 @@ void PI_Render::UpdateViewport(void)
 void PI_Render::ApplyCamera(void)
 {
 	EnterCriticalSection(&g_cs);
-	if (!pActiveCam)
+	if (!pActiveCam) {
+		LeaveCriticalSection(&g_cs);
 		return;
+	}
 
 	glLoadIdentity();	
 	gluLookAt(pActiveCam->pos.x, pActiveCam->pos.y, pActiveCam->pos.z,
