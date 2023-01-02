@@ -513,21 +513,21 @@ bool PI_Render::LoadAssetList(void)
 		ext = (*vpAssetList)[i].c_str();
 		ext += (*vpAssetList)[i].length() - 3;
 
-		if (!stricmp(ext, "tga"))
+		if (!_stricmp(ext, "tga"))
 		{
 			// Targa texture.
 			if (!LoadTarga((*vpAssetList)[i].c_str(), ignoreTexName, true))
 				foundAllAssets = false;
 			continue;
 		}
-		else if (!stricmp(ext, "pim"))
+		else if (!_stricmp(ext, "pim"))
 		{
 			// PigIron Mesh file.
 			if (!LoadPIM((*vpAssetList)[i].c_str(), ignoreMesh))
 				foundAllAssets = false;
 			continue;
 		}
-		else if (!stricmp(ext, "pwm"))
+		else if (!_stricmp(ext, "pwm"))
 		{
 			// PigIron World Mesh.
 			if (!LoadWorldPIM((*vpAssetList)[i].c_str()))
