@@ -712,7 +712,7 @@ bool PI_Render::LoadPIM(const char *filename, PI_Mesh &out)
 // Returns					True if successful.
 bool PI_Render::LoadWorldPIM(const char *filename)
 {
-	DWORD start = GetTickCount();
+	ULONGLONG start = GetTickCount64();
 
 	pWorld->Clear();
 	PI_Mesh temp;
@@ -721,7 +721,7 @@ bool PI_Render::LoadWorldPIM(const char *filename)
 	pWorld->BuildWorldTree();
 
 	PI_Logger &logger = PI_Logger::GetInstance();
-	logger << "PI_Render::LoadWorldPIM() elapsed " << (GetTickCount() - start) * 0.001f << " sec.\n";
+	logger << "PI_Render::LoadWorldPIM() elapsed " << (GetTickCount64() - start) * 0.001f << " sec.\n";
 	logger << "World tree contains " << pWorld->numWorldTris << " triangles split into " << pWorld->leafNodeCount << " leaf nodes ";
 	logger << '(' << pWorld->nodeCount << " total nodes).\n\n";
 
@@ -986,10 +986,10 @@ void PI_Render::RenderScene(void)
 #if 1
 	
 	static float timeAccum = 0, frameRate = 0;
-	static DWORD timeStamp = GetTickCount(), frameCount = 0;
+	static ULONGLONG timeStamp = GetTickCount(), frameCount = 0;
 
 	++frameCount;
-	timeAccum += (GetTickCount() - timeStamp) / 1000.0f;
+	timeAccum += (GetTickCount64() - timeStamp) / 1000.0f;
 	if (timeAccum > 1.0f)
 	{
 		frameRate = frameCount / timeAccum;
@@ -1000,7 +1000,7 @@ void PI_Render::RenderScene(void)
 	ostringstream out;
 	out << " RenderListSize: " << RenderListSize << " FPS: " << frameRate;
 	gui.DrawString(out, 10, 10, 24);
-	timeStamp = GetTickCount();
+	timeStamp = GetTickCount64();
 
 	gui.RenderGUI();
 
