@@ -4,8 +4,7 @@
 
 ![In-game screenshot](/assets/images/screenshot.png)
 
-A Win32 game demo that I stopped working on in January 2006. I intended this to
-be an isometric game where you drive around in a little tank and blow things up. 
+A Win32 game demo with volumetric shadows I worked on a long time ago. The solution still compiles and runs in Visual Studio 2022.
 
 # Controls
 
